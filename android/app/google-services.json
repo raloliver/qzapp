@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "878492700374",
+    "firebase_url": "https://q-zapp.firebaseio.com",
+    "project_id": "q-zapp",
+    "storage_bucket": "q-zapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878492700374:android:524afb513d754529",
+        "android_client_info": {
+          "package_name": "io.amde.qzapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878492700374-2b5rpb73jsfmr46uoeop9dv8ejd7u6hh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.amde.qzapp",
+            "certificate_hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+          }
+        },
+        {
+          "client_id": "878492700374-b2e98l1dbs679fangvsa2jgft3rklqqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyjRvam-5NCtU_y5JvuyjQxzh1_HmtebU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878492700374-b2e98l1dbs679fangvsa2jgft3rklqqv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "878492700374-4ed06d6jc06fvr3qmamab2e07h6ut24j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.amde.qzapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
