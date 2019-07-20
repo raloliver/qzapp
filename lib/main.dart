@@ -11,18 +11,9 @@ class MyApp extends StatelessWidget {
           child: Row(
             children: <Widget>[
               Expanded(
-                child: Container(
-                  height: 100,
-                  child: Text(
-                    'Hello World this is too long',
-                    // overflow: TextOverflow.ellipsis,
-                    overflow: TextOverflow.fade,
-                    // style: TextStyle(
-                    //   fontSize: 50,
-                    //   fontWeight: FontWeight.bold,
-                    // ),
-                    style: Theme.of(context).textTheme.display4,
-                  ),
+                child: GestureDetector(
+                  onTapDown: (details) => print(details.globalPosition.dx),
+                  child: Container(width: 100, height: 100, color: Colors.red),
                 ),
               ),
             ],
