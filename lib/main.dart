@@ -8,15 +8,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Row(
-            children: <Widget>[
-              Expanded(
-                child: GestureDetector(
-                  onTapDown: (details) => print(details.globalPosition.dx),
-                  child: Container(width: 100, height: 100, color: Colors.red),
-                ),
-              ),
-            ],
+          child: Material(
+            color: Colors.red,
+            child: InkWell(
+              onTap: () => print('tapped!'),
+              child: Container(width: 100, height: 100),
+            ),
           ),
         ),
       ),
