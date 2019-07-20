@@ -8,17 +8,26 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-            child: Container(
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-              color: Colors.blue,
-              border: Border.all(width: 5),
-              boxShadow: [
-                BoxShadow(offset: Offset(40, 40), color: Colors.pink),
-                BoxShadow(offset: Offset(20, 20), color: Colors.yellow),
-              ],
-              gradient: RadialGradient(colors: [Colors.yellow, Colors.pink])),
-        )),
+          child: Row(
+            children: <Widget>[
+              Expanded(
+                child: Container(
+                  height: 100,
+                  child: Text(
+                    'Hello World this is too long',
+                    // overflow: TextOverflow.ellipsis,
+                    overflow: TextOverflow.fade,
+                    // style: TextStyle(
+                    //   fontSize: 50,
+                    //   fontWeight: FontWeight.bold,
+                    // ),
+                    style: Theme.of(context).textTheme.display4,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
