@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -7,16 +8,30 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Material(
-            color: Colors.red,
-            child: InkWell(
-              onTap: () => print('tapped!'),
-              child: Container(width: 100, height: 100),
-            ),
-          ),
-        ),
-      ),
+          body: Container(
+              color: Colors.blue,
+              padding: EdgeInsets.all(16),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  Icon(
+                    CupertinoIcons.game_controller,
+                    color: Colors.white,
+                    size: 50,
+                  ),
+                  Icon(
+                    CupertinoIcons.game_controller,
+                    color: Colors.white,
+                    size: 100,
+                  ),
+                  Icon(
+                    CupertinoIcons.game_controller,
+                    color: Colors.white,
+                    size: 200,
+                  ),
+                ],
+              ))),
     );
   }
 }
