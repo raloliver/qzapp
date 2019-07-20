@@ -7,18 +7,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('My Cool App'),
-        ),
         body: Center(
-          child: Icon(Icons.cake),
-        ),
-        floatingActionButton: FloatingActionButton(onPressed: () {}),
-        drawer: Drawer(),
-        bottomNavigationBar: BottomNavigationBar(items: [
-          BottomNavigationBarItem(title: Text('foo'), icon: Icon(Icons.call)),
-          BottomNavigationBarItem(title: Text('bar'), icon: Icon(Icons.cached))
-        ]),
+            child: Container(
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+              color: Colors.blue,
+              border: Border.all(width: 5),
+              boxShadow: [
+                BoxShadow(offset: Offset(40, 40), color: Colors.pink),
+                BoxShadow(offset: Offset(20, 20), color: Colors.yellow),
+              ],
+              gradient: RadialGradient(colors: [Colors.yellow, Colors.pink])),
+        )),
       ),
     );
   }
