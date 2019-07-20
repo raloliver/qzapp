@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
           body: ListView(
-        scrollDirection: Axis.horizontal,
+        scrollDirection: Axis.vertical,
         children: _cards(),
       )),
     );
