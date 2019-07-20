@@ -5,16 +5,13 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Scaffold(
-      body: ListView.builder(itemBuilder: (context, idx) {
-        return Container(
-          color: Colors.blue,
-          margin: EdgeInsets.all(20),
-          height: 100,
-          child: Text('$idx'),
-        );
-      }),
-    ));
+    return MaterialApp(
+      home: Scaffold(
+          body: GridView.count(
+        crossAxisCount: 2,
+        children: _cards(),
+      )),
+    );
   }
 
   List<Widget> _cards() {
