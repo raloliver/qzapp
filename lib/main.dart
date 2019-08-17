@@ -49,6 +49,7 @@ class HomeScreen extends StatelessWidget {
 
 class AboutScreen extends StatelessWidget {
   final String name;
+  
   AboutScreen({this.name});
 
   @override
