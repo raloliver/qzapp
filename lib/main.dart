@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         '/home': (context) => HomeScreen(),
-        '/slideshow': (context) => AboutScreen()
+        '/about': (context) => AboutScreen()
       },
       home: HomeScreen(),
     );
@@ -31,13 +31,15 @@ class HomeScreen extends StatelessWidget {
               child: Text('Go About Page'),
               color: Colors.green,
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => AboutScreen(name: 'About'),
-                  ),
-                );
-                Navigator.pushNamed(context, '/about');
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(
+                //     builder: (context) => AboutScreen(name: 'About'),
+                //   ),
+                // );
+                // Navigator.popAndPushNamed(context, '/about'); // get out of the app
+                Navigator.pushReplacementNamed(context, '/about');
+                // Navigator.pushNamed(context, '/about');
               },
             ),
           ],
@@ -49,7 +51,7 @@ class HomeScreen extends StatelessWidget {
 
 class AboutScreen extends StatelessWidget {
   final String name;
-  
+
   AboutScreen({this.name});
 
   @override
