@@ -31,15 +31,23 @@ class HomeScreen extends StatelessWidget {
               child: Text('Go About Page'),
               color: Colors.green,
               onPressed: () {
+                Navigator.pushNamed(context, '/about');
+                // simple way
+
                 // Navigator.push(
                 //   context,
                 //   MaterialPageRoute(
                 //     builder: (context) => AboutScreen(name: 'About'),
                 //   ),
                 // );
-                // Navigator.popAndPushNamed(context, '/about'); // get out of the app
-                Navigator.pushReplacementNamed(context, '/about');
-                // Navigator.pushNamed(context, '/about');
+                /** more complex way */
+
+                // Navigator.popAndPushNamed(context, '/about');
+                // with back button on header and if user click, get out of the app
+
+                // Navigator.pushReplacementNamed(context, '/about');
+                
+                // without back button on header and if user click on native back button, get out of the app
               },
             ),
           ],
